@@ -1,0 +1,81 @@
+.cadastro {
+	.glyphicon {
+		top: 0;
+
+	}
+
+	.col-sm-8 {
+		padding-top: 20px;
+		margin-top: 20px;
+		padding-bottom: 40px;
+
+		.input-group {
+			margin-bottom: 30px;
+		}
+	}
+
+	input[type=submit] {
+		display: inline-block !important;
+	}
+
+	@media screen and (min-width: 1200px) {
+
+		.col-sm-8 {
+			box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+			background: white;
+			float: none !important;
+
+
+			.grid-column {
+				padding-left: 35px;
+
+				.input-group {
+					width: 45%;
+					float: left;
+					margin-bottom: 30px;
+					margin-right: 30px;
+
+					&.select {
+						display: block !important;
+
+						select {
+							width: 45% !important;
+							&:first-child {
+								margin-right: 28px;
+
+							}
+						}
+					}
+
+
+
+
+
+				}
+				select.tipoCriacao {
+					width: 40%;
+
+					option.selected {
+						color: #888;
+					}
+				}
+
+
+
+				p.error {
+					position: absolute;
+					z-index: 9999;
+					top: 30px;
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+}

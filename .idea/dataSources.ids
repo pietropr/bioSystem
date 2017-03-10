@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - biosystem@localhost" uuid="ad5af191-19cc-4f7d-b3fa-b7e309b7d779">
+    <database-info product="MySQL" version="5.5.25" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="biosystem"/>
+      <table id="2" parent="1" name="prop_user"/>
+      <table id="3" parent="1" name="animais"/>
+      <table id="4" parent="1" name="log"/>
+      <column id="5" parent="2" name="idProp">
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="6" parent="2" name="usuario">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="7" parent="2" name="senha">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="8" parent="2" name="nAnimais">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="9" parent="2" name="nomeProp">
+        <data-type>varchar(60)</data-type>
+      </column>
+      <column id="10" parent="2" name="nomeFazenda">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="11" parent="2" name="regiao_fazenda">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="12" parent="2" name="tipoCriacao">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="13" parent="2" name="porteProdutor">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="14" parent="2" name="telefone">
+        <data-type>varchar(12)</data-type>
+      </column>
+      <column id="15" parent="2" name="email">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="16" parent="2" name="periodoColeta">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="17" parent="2" name="sistemaCompotera">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="18" parent="2" name="tipo">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <key id="19" parent="2" name="PRIMARY">
+        <columns>idProp</columns>
+        <primary>1</primary>
+      </key>
+      <column id="20" parent="3" name="idAnimais">
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="21" parent="3" name="nome">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="22" parent="3" name="solidos">
+        <mandatory>1</mandatory>
+        <data-type>double</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="23" parent="3" name="capEmissaoMax">
+        <mandatory>1</mandatory>
+        <data-type>double</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="24" parent="3" name="PRIMARY">
+        <columns>idAnimais</columns>
+        <primary>1</primary>
+      </key>
+      <column id="25" parent="4" name="idLog">
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="26" parent="4" name="operacao">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="27" parent="4" name="dataLog">
+        <data-type>date</data-type>
+      </column>
+      <column id="28" parent="4" name="horario">
+        <data-type>time</data-type>
+      </column>
+      <key id="29" parent="4" name="PRIMARY">
+        <columns>idLog</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

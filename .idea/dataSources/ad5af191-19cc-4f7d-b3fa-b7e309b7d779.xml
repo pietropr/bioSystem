@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - biosystem@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="biosystem">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="aula2804"/>
+    <schema id="4" parent="1" name="basepweb"/>
+    <schema id="5" parent="1" name="biblioteca"/>
+    <schema id="6" parent="1" name="corridaunespdb"/>
+    <schema id="7" parent="1" name="duathlon"/>
+    <schema id="8" parent="1" name="duathlon2"/>
+    <schema id="9" parent="1" name="futebol"/>
+    <schema id="10" parent="1" name="gerenciamento"/>
+    <schema id="11" parent="1" name="information_schema"/>
+    <schema id="12" parent="1" name="jee"/>
+    <schema id="13" parent="1" name="lelamendes"/>
+    <schema id="14" parent="1" name="mysql"/>
+    <schema id="15" parent="1" name="orotour"/>
+    <schema id="16" parent="1" name="performance_schema"/>
+    <schema id="17" parent="1" name="revisao"/>
+    <schema id="18" parent="1" name="rsgt"/>
+    <schema id="19" parent="1" name="sofreios_wp"/>
+    <schema id="20" parent="1" name="teste"/>
+    <schema id="21" parent="1" name="testss"/>
+    <schema id="22" parent="1" name="uebi"/>
+    <table id="23" parent="2" name="animais"/>
+    <table id="24" parent="2" name="constantes"/>
+    <table id="25" parent="2" name="log"/>
+    <table id="26" parent="2" name="prop_user"/>
+    <table id="27" parent="2" name="user"/>
+    <column id="28" parent="23" name="idAnimais">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="29" parent="23" name="nome">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="30" parent="23" name="solidos">
+      <Position>3</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="31" parent="23" name="capEmissaoMax">
+      <Position>4</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="32" parent="23" name="PRIMARY">
+      <ColNames>idAnimais</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="33" parent="24" name="idconstante">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="34" parent="24" name="nome">
+      <Position>2</Position>
+      <DataType>varchar(60)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="35" parent="24" name="valor">
+      <Position>3</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="36" parent="24" name="PRIMARY">
+      <ColNames>idconstante</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="37" parent="25" name="idLog">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="38" parent="25" name="operacao">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="39" parent="25" name="dataLog">
+      <Position>3</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="40" parent="25" name="horario">
+      <Position>4</Position>
+      <DataType>time|0</DataType>
+    </column>
+    <key id="41" parent="25" name="PRIMARY">
+      <ColNames>idLog</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="42" parent="26" name="idProp">
+      <Position>1</Position>
+      <DataType>int(10)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="43" parent="26" name="nAnimais">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="44" parent="26" name="nomeProp">
+      <Position>3</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+    <column id="45" parent="26" name="nomeFazenda">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="46" parent="26" name="regiao_fazenda">
+      <Position>5</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="47" parent="26" name="tipoCriacao">
+      <Position>6</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="48" parent="26" name="porteProdutor">
+      <Position>7</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="49" parent="26" name="telefone">
+      <Position>8</Position>
+      <DataType>varchar(12)|0</DataType>
+    </column>
+    <column id="50" parent="26" name="email">
+      <Position>9</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="51" parent="26" name="periodoColeta">
+      <Position>10</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="52" parent="26" name="sistemaCompotera">
+      <Position>11</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="53" parent="26" name="tipo">
+      <Position>12</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <key id="54" parent="26" name="PRIMARY">
+      <ColNames>idProp</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="55" parent="27" name="senha">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="56" parent="27" name="usuario">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="27" name="email">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="27" name="telefone">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+  </database-model>
+</dataSource>
